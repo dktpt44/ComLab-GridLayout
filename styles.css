@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gridDiv {
+  padding: 8px 0px;
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 6px;
+}
+
+.sectionHeader {
+  background-color: rgb(33, 2, 66);
+  max-width: 1200px;
+  margin: 58px auto 10px;
+  padding: 14px 10px;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+}
+
+.gridDiv div {
+  background-color: black;
+  width: 100%;
+  color: white;
+  border-radius: 3px;
+  padding: 14px;
+  text-align: center;
+}
+
+.gridDiv div:nth-child(1) {
+  grid-column: span 4;
+  grid-row: span 1;
+  padding: 20px;
+}
+.gridDiv div:nth-child(2) {
+  grid-column: span 4;
+  grid-row: span 1;
+  background-color: rgb(33, 2, 66);
+  margin-top: 28px;
+}
+
+.gridDiv div:nth-child(3) {
+  background-color: rgb(55, 4, 104);
+  grid-column: 1;
+  grid-row: span 3;
+  min-height: 200px;
+}
+
+.gridDiv div:nth-child(4) {
+  padding: 0;
+  background-color: transparent;
+  overflow: hidden;
+  height: 550px;
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+#myh2 {
+  margin-top: 42px;
+}
+#mydesc {
+  text-align: justify;
+  padding: 8px;
+  margin-top: 24px;
+  font-size: 17px;
+}
+.gridDiv div:nth-child(n + 5) {
+  padding: 12px;
+  background-color: rgb(68, 136, 0);
+  cursor: pointer;
+}
+
+.gridDiv div:nth-child(n + 5):hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: rgb(253, 170, 253);
+}
+
+.active {
+  background-color: rgb(43, 85, 0) !important;
+}
+
+.navHead {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1px;
+}
+.placetoeat {
+  font-size: 20px;
+  font-weight: 600;
+}
+#divImg {
+  width: 100%;
+  height: 100%;
+}
+
+.gridDiv2 {
+  margin-bottom: 50px !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px 1px;
+  border-radius: 4px;
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.gridDiv2 div {
+  background-color: crimson;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* text animation */
+.ml7 {
+  position: relative;
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+/* text description animation */
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.ml11 .letter {
+  display: inline-block;
+}
+
+/* image animation */
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.gridDiv2 h2 {
+  margin-top: 10px;
+}
+.gridDiv2 p {
+  letter-spacing: 1px;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.gridDiv2 img {
+  margin-top: 20px;
+  border-radius: 6px;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.music {
+  cursor: pointer;
+  background-color: black;
+  padding: 30px 0px 48px;
+  margin-bottom: 40px;
+}
+
+.music img {
+  position: relative;
+  top:12px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
